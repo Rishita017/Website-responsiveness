@@ -1,3 +1,6 @@
 function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("show");
+  const menu = document.querySelector("nav ul");
+  menu.style.display =
+    menu.style.display === "flex" ? "none" : "flex";
 }
+
