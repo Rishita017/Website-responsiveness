@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Project</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">RWD Project</div>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <h1>Enhancing Website Responsiveness</h1>
+        <p>Modern Mobile-First Responsive Web Design Solution</p>
+    </section>
+
+    <!-- ===== PROBLEM SECTION ===== -->
+    <section id="problem" class="section">
+        <h2>Problem Statement</h2>
+        <div class="grid">
+            <div class="card">Improperly aligned content</div>
+            <div class="card">Overlapping text & images</div>
+            <div class="card">Poor mobile navigation</div>
+            <div class="card">Slow loading issues</div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUTION SECTION ===== -->
+    <section id="solution" class="section light">
+        <h2>Proposed Solutions</h2>
+        <div class="solutions">
+
+            <div class="solution-card">
+                <h3>1. Responsive Web Design</h3>
+                <p>Uses flexible grids, media queries and relative units.</p>
+            </div>
+
+            <div class="solution-card">
+                <h3>2. Mobile-First Approach</h3>
+                <p>Design for small screens first, then enhance for larger screens.</p>
+            </div>
+
+            <div class="solution-card">
+                <h3>3. Optimized Images</h3>
+
+                <!-- Responsive Image -->
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/sample.jpg">
+                    <source media="(max-width: 1024px)" srcset="images/sample.jpg">
+                    <img src="images/sample.jpg" alt="Responsive Example" loading="lazy">
+                </picture>
+
+            </div>
+
+            <div class="solution-card">
+                <h3>4. Performance Optimization</h3>
+                <p>Minified files, CDN usage, compression & caching.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section id="benefits" class="section">
+        <h2>Expected Benefits</h2>
+        <ul class="benefits">
+            <li>Improved user experience</li>
+            <li>Better SEO ranking</li>
+            <li>Reduced bounce rate</li>
+            <li>Consistent design across devices</li>
+        </ul>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section light">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 RWD Project | Designed by Rishita Jain</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
